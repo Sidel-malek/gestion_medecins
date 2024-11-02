@@ -17,5 +17,5 @@ Ce projet est une petite application web pour la gestion des médecins . Il se c
 1. Cloner le dépôt.
 2. Naviguer dans le dossier `angular` et exécuter `npm install` pour installer les dépendances du frontend.
 3. Naviguer dans le dossier `express` et exécuter `npm install` pour installer les dépendances du backend.
-4. Démarrer le serveur backend avec `node server.js` (ajustez selon votre fichier de serveur).
+4. Démarrer le serveur backend avec `node main.js` .
 5. Démarrer le frontend avec `ng serve`.
