@@ -1,48 +1,21 @@
-# Application de Gestion des Médecins
+## Gestion Médecins
 
-**Description :**  
-Cette application permet la gestion des médecins, incluant l'ajout et la recherche de médecins par nom ou wilaya. Elle est divisée en deux parties :
+**Description** :  
+Ce projet est une petite application web pour la gestion des médecins . Il se compose de deux parties principales : un frontend en Angular et un backend en Express. Les utilisateurs peuvent ajouter des médecins, rechercher des médecins par nom ou par lieu, et consulter une liste des médecins enregistrés.
 
-- **Frontend Angular** : Application de gestion de l'interface utilisateur.
-- **Backend Express** : API RESTful pour gérer les données des médecins.
+### Fonctionnalités :
+- Ajouter de nouveaux médecins avec leur nom, wilaya et commune.
+- Rechercher des médecins par nom ou par wilaya.
+- Afficher la liste de tous les médecins enregistrés.
 
-## Installation
+### Technologies Utilisées :
+- **Frontend** : Angular
+- **Backend** : Express.js
+- **Base de données** : MongoDB
 
-### Frontend Angular
-
-1. Accédez au dossier Angular :
-   ```bash
-   cd angular
-   ```
-
-2. Installez les dépendances :
-   ```bash
-   npm install
-   ```
-
-3. Lancez l'application :
-   ```bash
-   ng serve
-   ```
-
-### Backend Express
-
-1. Accédez au dossier Express :
-   ```bash
-   cd express
-   ```
-
-2. Installez les dépendances :
-   ```bash
-   npm install
-   ```
-
-3. Lancez le serveur :
-   ```bash
-   node index.js
-   ```
-
-## Utilisation
-
-- L'application Angular sera accessible sur `http://localhost:4200`.
-- L'API Express sera accessible sur `http://localhost:4500`.
+### Configuration :
+1. Cloner le dépôt.
+2. Naviguer dans le dossier `angular` et exécuter `npm install` pour installer les dépendances du frontend.
+3. Naviguer dans le dossier `express` et exécuter `npm install` pour installer les dépendances du backend.
+4. Démarrer le serveur backend avec `node server.js` (ajustez selon votre fichier de serveur).
+5. Démarrer le frontend avec `ng serve`.
