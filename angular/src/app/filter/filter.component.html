@@ -1,0 +1,16 @@
+<form #f1="ngForm" (ngSubmit)="search()" novalidate class="row mt-3">
+    <input type="text" class="col-4 ms-5" placeholder="chercher par nom ou wilaya" [(ngModel)]="nom" name="nom" />
+    <button type="submit" class="btn btn-outline-success col-2 ms-5">search</button>
+</form>
+
+
+
+<section class="mt-3">
+
+    <h5 class="mt-3 ms-4">Liste des Médecins</h5>
+
+    <ol>
+      <li class=" ms-4 mb-2" *ngFor="let d of data ;  let i = index ">{{d.nom}} | {{d.wilaya}} | {{d.commune}} </li>
+  
+    </ol>
+  </section>

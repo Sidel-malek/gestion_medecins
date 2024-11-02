@@ -1,0 +1,30 @@
+
+<form #f="ngForm" (ngSubmit)="addMedecin()" novalidate class="row mt-3">
+    <input type="text" class="col-2 ms-5" placeholder="nom" [(ngModel)]="nom" name="nom" minlength="3" />
+    <select class="col-2 ms-5" name="wilaya" [(ngModel)]="wilaya" name="wilaya">
+        <option value="sba">SBA</option>
+        <option value="oran">Oran</option>
+        <option value="setif">Setif</option>
+    </select>
+    <select class="col-2 ms-5" *ngIf="wilaya == 'sba'" name="commune" [(ngModel)]="commune">
+        <option value="sba">SBA</option>
+        <option value="telagh">telagh</option>
+        <option value="sefisef">sefisef</option>
+    </select>
+    <select class="col-2 ms-5" *ngIf="wilaya == 'oran'" name="commune" [(ngModel)]="commune">
+        <option value="oran">Oran</option>
+        <option value="other">Other</option>
+    </select>
+    <select  class="col-2 ms-5"  *ngIf="wilaya == 'setif'" name="commune" [(ngModel)]="commune">
+        <option value="setif">Setif</option>
+        <option value="other">Other</option>
+    </select>
+    <button type="submit" class="btn btn-outline-success col-2 ms-5">ajouter médecin</button>
+</form>
+
+<!--
+<form #monF="ngForm">
+    <input type="text" [(ngModel)]="name" name="name" #name="ngModel" />{{name.value}}
+    <input type="text" [(ngModel)]="age" name="age" #age="ngModel" />{{age.value}}
+</form>
+-->
